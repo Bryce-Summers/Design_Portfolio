@@ -1,2 +1,3 @@
-# UX_Portfolio
-A site dedicated to my User Experience Work
+# Design Portfolio
+
+A site dedicated to my design work, including Game Design, User Experience Design, and Visual Design.
