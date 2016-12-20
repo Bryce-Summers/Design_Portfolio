@@ -38,6 +38,8 @@ I am working on a computer game for people such as Transportation Engineers, Urb
 
 <p>
 FIXME: Make an illustration for my process on this one.
+
+My proccess is Sketch / Design -> Develop -> Test / gather info. (I need to think this through more.)
 </p>
 
 
@@ -47,23 +49,22 @@ FIXME: Make an illustration for my process on this one.
 
 <h2> Prototype 1</h2>
 
-FIXME: Put a link to a live version of this prototype.
-
-<img class="displayed" src="images/i1_dev.png" alt="Sim Urban Development Prototype iteration 1.">
+<a href="https://bryce-summers.github.io/SimUrban/builds/build_i1.html" target="_blank"> Play the prototype!
+<img class="displayed" src="images/i1_dev.png" alt="Sim Urban Development Prototype iteration 1."> </a>
 
 <h2> User Testing</h2>
 
 
 <h2> Prototype 2</h2>
-<img class="displayed" src="images/i2_dev.png" alt="Sim Urban Development Prototype iteration 1.">
 
-FIXME: Put a link to a live version of this prototype.
+<a href="https://bryce-summers.github.io/SimUrban/builds/build_i2.html" target="_blank"> Play the prototype!
+<img class="displayed" src="images/i2_dev.png" alt="Sim Urban Development Prototype iteration 2."> </a>
 
 <h2> Sketching </h2>
 
 <img class="displayed" src="images/sketch1.png" alt="Sim Urban Sketch1">
 
-<h2> User Research </h2>
+<h2> User Research Survey 1</h2>
 
 <h3> Written Feedback </h3>
 <ul>
@@ -81,20 +82,60 @@ FIXME: Put a link to a live version of this prototype.
 
 <h2> Sketching </h2>
 
-<img class="displayed" src="images/sketch2.png" alt="Sim Urban Sketch2">
-
-<h2> Prototype 3 </h2>
-
 <p>
-This is a design Prototype. Click <a href="https://bryce-summers.github.io/SimUrbanAxurePrototype/" target="_blank">here</a> to see a live version of this prototype.
+After the survey feedback, I drew some more sketches.
 </p>
 
-<img class="displayed" src="images/i3_design.png" alt="Sim Urban Sketch2">
+<img class="displayed" src="images/sketch2.png" alt="Sim Urban Sketch2">
 
+<h2> Design Prototype 1 </h2>
 
+<p>
+This is prototype of the user input experience and various information menus.
+Please click <a href="https://bryce-summers.github.io/SimUrbanAxurePrototype/" target="_blank">here</a> to see a live version of this prototype.
 
+<a href="https://bryce-summers.github.io/SimUrbanAxurePrototype/" target="_blank">
+<img class="displayed" src="images/d1_design.png" alt="Sim Urban Design Prototype 1">
+</a>
 
+</p>
 
+<h3> Feedback </h3>
+<ul>
+<li> It is boring to create line items and manage a categorized hierarchy for infrastructure elements. The feedback should be displayed over the land, the categorization should be automatic, and the user should spend as much time as possible acting as a transportation engineer and thinking about placing roads.</li>
+<li> I evidently didn't mock up enough links and users had trouble finding the info screen for Sam Street. Perhaps the element menu linkages are out of whack a little bit. </li>
+<li> It might be a good idea to automatically guide the user towards problematic roads and stellar roads through a viewport navigation system.
+<li> The users want to click on the green / red bar of any other information panel on the screen to bring up a relevant menu. </li>
+<li> The users seemed to gravitate towards the 'more information' pane on the characters, which means that they didn't immediatly believe that the linked house / person / street buttons were useful for their purposes. I should either work on the naming or work on not requiring people to think too many logical steps ahead. </li>
+</ul>
+
+<h2> Axis Aligned Bounding Volume Hierachies </h2>
+
+<a href="https://bryce-summers.github.io/SimUrban/builds/build_i3_aabvh.html" target="_blank"> Play a Demo!
+<img class="displayed" src="images/i3_AABVH.png" alt="Iteration 3 axis aligned bounding volume hierarchies">
+</a>
+
+<h3> Sketching </h3>
+
+<p> Before starting on prototype 3, I did some sketcing where I though about algorithms and data structures and how this work fits into my larger life as an algorithm designer. I want to design Sim Urban in such a way that I solve some useful problems that I can continue to use in my work. They will also be necessary for creating an efficient user experience, which simulation games like this depend on, which was verified in user research survey 1, where many of them said that their least favorite past simulation game experiences have come about when the simulation makes them aware of computational limitations.
+</p>
+<img class="displayed" src="images/sketch3.png" alt="Sim Urban Sketch2">
+
+<h3> Prototype 3 </h3>
+
+<p> In prototype 3 I completed a major refactoring of the code base, which will make it much easier to iterate on it in the future. But, since my game will rely on a rock solid algorithmic foundation, I spent a lot of time working on the invisible computations under the hood, but I have't yet completed them. The visible results of this iteration are a polygonalization routine that fills in the roads and some visible intersection objects.
+</p>
+
+<a href="https://bryce-summers.github.io/SimUrban/builds/build_i3_aabvh.html" target="_blank"> Play the prototype!
+<img class="displayed" src="images/i3_dev.png" alt="Development Iteration number 3"></a>
+</a>
+
+<h3> Sketching </h3>
+<p>
+Soon, when I have some more time, I will get more of the basic transportation network topology functionalities working. Here are some sketches of various user interactions.
+I would like to provide the user with clear feedback about what actions are legal, illegal, or will provide a connection to the existing network.
+</p>
+<img class="displayed" src="images/sketch4.png" alt="Sim Urban Sketch2">
 
 </div> <!-- End of Content -->
 </body>
